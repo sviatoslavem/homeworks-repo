@@ -1,0 +1,30 @@
+[33m[2025-01-26T17:29:05.499Z], WARNING: Warning message[39m 
+[31m[2025-01-26T17:29:05.499Z], ERORR: Critical: Test error![39m
+[31mStack: Error: Test error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:9:13[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-01-26T17:29:05.499Z], WARNING: PermissionException: Test PermissionException error![39m
+[33mStack: PermissionException: Test PermissionException error![39m
+[33m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
+[33m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[34m[2025-01-26T17:29:05.499Z], INFO: Info message[39m 
+[31m[2025-01-26T17:29:05.499Z], ERORR: Error message[39m 
+[31m[2025-01-26T17:29:05.499Z], ERORR: PermissionException: Test PermissionException error![39m
+[31mStack: PermissionException: Test PermissionException error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[34m[2025-01-26T17:39:04.403Z], INFO: Info message[39m 
+[33m[2025-01-26T17:39:04.404Z], WARNING: PermissionException: Test PermissionException error![39m
+[33mStack: PermissionException: Test PermissionException error![39m
+[33m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
+[33m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-01-26T17:39:04.404Z], ERORR: System: Test system error![39m
+[31mStack: Error: Test system error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:9:13[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-01-26T17:39:04.404Z], ERORR: PermissionException: Test PermissionException error![39m
+[31mStack: PermissionException: Test PermissionException error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-01-26T17:39:04.403Z], WARNING: Warning message[39m 
+[31m[2025-01-26T17:39:04.403Z], ERORR: Error message[39m 
