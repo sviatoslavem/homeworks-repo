@@ -28,3 +28,130 @@
 [31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
 [33m[2025-01-26T17:39:04.403Z], WARNING: Warning message[39m 
 [31m[2025-01-26T17:39:04.403Z], ERORR: Error message[39m 
+[33m[2025-02-03T12:45:25.574Z], WARNING: This is a warning log.[39m 
+[34m[2025-02-03T12:45:25.572Z], INFO: This is an info log.[39m 
+[31m[2025-02-03T12:45:25.574Z], ERORR: This is an error log.[39m 
+[31m[2025-02-03T12:50:57.757Z], ERORR: This is an error log.[39m 
+[34m[2025-02-03T12:50:57.756Z], INFO: This is an info log.[39m 
+[33m[2025-02-03T12:50:57.757Z], WARNING: This is a warning log.[39m 
+[34m[2025-02-03T12:58:31.620Z], INFO: This is an info log.[39m 
+[31m[2025-02-03T12:58:31.621Z], ERORR: This is an error log.[39m 
+[33m[2025-02-03T12:58:31.621Z], WARNING: This is a warning log.[39m 
+[31m[2025-02-03T12:58:31.621Z], ERORR: System: Test system error![39m
+[31mStack: Error: Test system error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:30:13[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T13:12:33.720Z], ERORR: This is an error log.[39m 
+[34m[2025-02-03T13:12:33.720Z], INFO: This is an info log.[39m 
+[33m[2025-02-03T13:12:33.720Z], WARNING: This is a warning log.[39m 
+[31m[2025-02-03T13:12:33.721Z], ERORR: System: Test system error![39m
+[31mStack: Error: Test system error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:32:13[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-02-03T13:20:35.869Z], WARNING: This is a warning log.[39m 
+[31m[2025-02-03T13:20:35.869Z], ERORR: This is an error log.[39m 
+[34m[2025-02-03T13:20:35.867Z], INFO: This is an info log.[39m 
+[31m[2025-02-03T13:20:35.869Z], ERORR: System: Test system error![39m
+[31mStack: Error: Test system error![39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:32:13[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+info: This is an informational message. 
+warning: This is a warning message. 
+error: This is an error message. 
+info: This is an informational message. 
+error: This is an error message. 
+warning: This is a warning message. 
+info: This is an informational message. 
+warning: This is a warning message. 
+error: System Error: This is a system error
+Stack: Error: This is a system error
+    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:8:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) 
+error: PermissionException: Permission denied
+Stack: PermissionException: Permission denied
+    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:9:23
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) 
+[31m[2025-02-03T14:27:13.346Z], ERORR: PermissionException: Permission denied[39m 
+[34m[2025-02-03T14:27:13.345Z], INFO: This is an informational message.[39m 
+[31m[2025-02-03T14:27:13.346Z], ERORR: Error: This is a system error[39m 
+[33m[2025-02-03T14:27:13.346Z], WARNING: This is a warning message.[39m 
+[34m[2025-02-03T14:44:55.067Z], INFO: This is an informational message.[39m 
+[33m[2025-02-03T14:44:55.068Z], WARNING: This is a warning message.[39m 
+[31m[2025-02-03T14:44:55.068Z], ERORR: Error: This is a system error[39m 
+[31m[2025-02-03T14:44:55.068Z], ERORR: PermissionException: Permission denied[39m 
+[34m[2025-02-03T14:47:12.618Z], INFO: This is an informational message.[39m 
+[33m[2025-02-03T14:47:12.619Z], WARNING: This is a warning message.[39m 
+[31m[2025-02-03T14:47:12.619Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:8:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T14:47:12.620Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:9:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[34m[2025-02-03T14:52:04.486Z], INFO: This is an informational message.[39m 
+[33m[2025-02-03T14:52:04.487Z], WARNING: This is a warning message.[39m 
+[31m[2025-02-03T14:52:04.487Z], ERROR: This is a error message.[39m 
+[31m[2025-02-03T14:52:04.487Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:6:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T14:52:04.487Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:7:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[34m[2025-02-03T14:55:01.796Z], INFO: This is an informational message.[39m 
+[33m[2025-02-03T14:55:01.797Z], WARNING: This is a warning message.[39m 
+[31m[2025-02-03T14:55:01.797Z], ERROR: This is a error message.[39m 
+[31m[2025-02-03T14:55:01.798Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T14:55:01.798Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T15:05:49.987Z], ERROR: This is a error message.[39m 
+[31m[2025-02-03T15:05:49.988Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-02-03T15:05:49.987Z], WARNING: This is a warning message.[39m 
+[31m[2025-02-03T15:05:49.987Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[34m[2025-02-03T15:05:49.986Z], INFO: This is an informational message.[39m 
+[34m[2025-02-03T15:08:55.931Z], INFO: This is an informational message.[39m 
+[31m[2025-02-03T15:08:55.933Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T15:08:55.932Z], ERROR: This is a error message.[39m 
+[31m[2025-02-03T15:08:55.933Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-02-03T15:08:55.932Z], WARNING: This is a warning message.[39m 
+[34m[2025-02-03T15:11:33.335Z], INFO: This is an informational message.[39m 
+[31m[2025-02-03T15:11:33.339Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T15:11:33.338Z], ERROR: This is a error message.[39m 
+[31m[2025-02-03T15:11:33.339Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-02-03T15:11:33.336Z], WARNING: This is a warning message.[39m 
+[34m[2025-02-03T15:13:25.616Z], INFO: This is an informational message.[39m 
+[31m[2025-02-03T15:13:25.620Z], ERROR: System: Permission denied[39m
+[31mStack: PermissionException: Permission denied[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[33m[2025-02-03T15:13:25.617Z], WARNING: This is a warning message.[39m 
+[31m[2025-02-03T15:13:25.619Z], ERROR: System: This is a system error[39m
+[31mStack: Error: This is a system error[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
+[31m[2025-02-03T15:13:25.619Z], ERROR: This is a error message.[39m 

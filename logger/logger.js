@@ -1,8 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
+import { appendToFile } from "./fileWriter.js";
+import EventEmitter from "../emitter.js";
 import levels from "./levels.js";
 import formatMessage from "./formatter.js";
-import PermissionException from "../exceptions/PermissionsException.js";
+
+export const EVENT_LOGINFO = "logInfo";
+export const EVENT_LOGWARNING = "logWarning";
+export const EVENT_LOGERROR = "logError";
+
+const emitter = new EventEmitter();
 
 class Logger {
   constructor(logPath = "logs/app.log") {
@@ -11,46 +18,40 @@ class Logger {
     if (!fs.existsSync(path.dirname(this.logPath))) {
       fs.mkdirSync(path.dirname(this.logPath), { recursive: true });
     }
+
+    emitter.on(EVENT_LOGINFO, this.logInfo.bind(this));
+    emitter.on(EVENT_LOGWARNING, this.logWarning.bind(this));
+    emitter.on(EVENT_LOGERROR, this.logError.bind(this));
   }
 
-  __log(level, msg) {
-    let formattedMsg;
+  async logInfo(msg) {
+    const formattedMsg = formatMessage(levels.INFO, msg);
+    await appendToFile(this.logPath, formattedMsg);
+    console.log("logInfo triggered");
+  }
 
-    if (msg instanceof PermissionException) {
-      formattedMsg = formatMessage(
-        level,
-        `PermissionException: ${msg.message}\nStack: ${msg.stack}`
-      );
-    } else if (msg instanceof Error) {
-      formattedMsg = formatMessage(
-        level,
-        `System: ${msg.message}\nStack: ${msg.stack}`
-      );
-    } else {
-      formattedMsg = formatMessage(level, msg);
-    }
+  async logWarning(msg) {
+    const formattedMsg = formatMessage(levels.WARNING, msg);
+    await appendToFile(this.logPath, formattedMsg);
+    console.log("logWarning triggered");
+  }
 
-    if (process.env["APP_ENV"] === "local") {
-      console.log(formattedMsg);
-    } else {
-      fs.appendFile(this.logPath, `${formattedMsg} \n`, (err) => {
-        if (err) {
-          console.error("Error while try to put data to file", err.message);
-        }
-      });
-    }
+  async logError(msg) {
+    const formattedMsg = formatMessage(levels.ERROR, msg);
+    await appendToFile(this.logPath, formattedMsg);
+    console.log("logError triggered");
   }
 
   info(msg) {
-    this.__log(levels.INFO, msg);
+    emitter.emit(EVENT_LOGINFO, msg);
   }
 
   warning(msg) {
-    this.__log(levels.WARNING, msg);
+    emitter.emit(EVENT_LOGWARNING, msg);
   }
 
   error(msg) {
-    this.__log(levels.ERROR, msg);
+    emitter.emit(EVENT_LOGERROR, msg);
   }
 }
 

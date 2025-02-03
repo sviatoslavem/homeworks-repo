@@ -1,17 +1,27 @@
 import chalk from "chalk";
+import PermissionException from "../exceptions/PermissionsException.js"; // Імпортуємо PermissionException
 
 function formatMessage(level, msg) {
-  const timestemp = new Date().toISOString();
+  const timestamp = new Date().toISOString();
+  let formattedMsg;
+
+  if (msg instanceof Error) {
+    formattedMsg = `System: ${msg.message}\nStack: ${msg.stack}`;
+  } else if (msg instanceof PermissionException) {
+    formattedMsg = `PermissionException: ${msg.message}\nStack: ${msg.stack}`;
+  } else {
+    formattedMsg = msg;
+  }
 
   switch (level) {
     case "info":
-      return chalk.blue(`[${timestemp}], INFO: ${msg}`);
+      return chalk.blue(`[${timestamp}], INFO: ${formattedMsg}`);
     case "warning":
-      return chalk.yellow(`[${timestemp}], WARNING: ${msg}`);
+      return chalk.yellow(`[${timestamp}], WARNING: ${formattedMsg}`);
     case "error":
-      return chalk.red(`[${timestemp}], ERORR: ${msg}`);
+      return chalk.red(`[${timestamp}], ERROR: ${formattedMsg}`);
     default:
-      return chalk.gray(`[${timestemp}], UNKNOW: ${msg}`);
+      return chalk.gray(`[${timestamp}], UNKNOWN: ${formattedMsg}`);
   }
 }
 
