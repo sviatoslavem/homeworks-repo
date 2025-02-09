@@ -1,157 +1,130 @@
-[33m[2025-01-26T17:29:05.499Z], WARNING: Warning message[39m 
-[31m[2025-01-26T17:29:05.499Z], ERORR: Critical: Test error![39m
-[31mStack: Error: Test error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:9:13[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-01-26T17:29:05.499Z], WARNING: PermissionException: Test PermissionException error![39m
-[33mStack: PermissionException: Test PermissionException error![39m
-[33m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
-[33m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[34m[2025-01-26T17:29:05.499Z], INFO: Info message[39m 
-[31m[2025-01-26T17:29:05.499Z], ERORR: Error message[39m 
-[31m[2025-01-26T17:29:05.499Z], ERORR: PermissionException: Test PermissionException error![39m
-[31mStack: PermissionException: Test PermissionException error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[34m[2025-01-26T17:39:04.403Z], INFO: Info message[39m 
-[33m[2025-01-26T17:39:04.404Z], WARNING: PermissionException: Test PermissionException error![39m
-[33mStack: PermissionException: Test PermissionException error![39m
-[33m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
-[33m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-01-26T17:39:04.404Z], ERORR: System: Test system error![39m
-[31mStack: Error: Test system error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:9:13[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-01-26T17:39:04.404Z], ERORR: PermissionException: Test PermissionException error![39m
-[31mStack: PermissionException: Test PermissionException error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:8:17[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-01-26T17:39:04.403Z], WARNING: Warning message[39m 
-[31m[2025-01-26T17:39:04.403Z], ERORR: Error message[39m 
-[33m[2025-02-03T12:45:25.574Z], WARNING: This is a warning log.[39m 
-[34m[2025-02-03T12:45:25.572Z], INFO: This is an info log.[39m 
-[31m[2025-02-03T12:45:25.574Z], ERORR: This is an error log.[39m 
-[31m[2025-02-03T12:50:57.757Z], ERORR: This is an error log.[39m 
-[34m[2025-02-03T12:50:57.756Z], INFO: This is an info log.[39m 
-[33m[2025-02-03T12:50:57.757Z], WARNING: This is a warning log.[39m 
-[34m[2025-02-03T12:58:31.620Z], INFO: This is an info log.[39m 
-[31m[2025-02-03T12:58:31.621Z], ERORR: This is an error log.[39m 
-[33m[2025-02-03T12:58:31.621Z], WARNING: This is a warning log.[39m 
-[31m[2025-02-03T12:58:31.621Z], ERORR: System: Test system error![39m
-[31mStack: Error: Test system error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:30:13[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T13:12:33.720Z], ERORR: This is an error log.[39m 
-[34m[2025-02-03T13:12:33.720Z], INFO: This is an info log.[39m 
-[33m[2025-02-03T13:12:33.720Z], WARNING: This is a warning log.[39m 
-[31m[2025-02-03T13:12:33.721Z], ERORR: System: Test system error![39m
-[31mStack: Error: Test system error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:32:13[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-02-03T13:20:35.869Z], WARNING: This is a warning log.[39m 
-[31m[2025-02-03T13:20:35.869Z], ERORR: This is an error log.[39m 
-[34m[2025-02-03T13:20:35.867Z], INFO: This is an info log.[39m 
-[31m[2025-02-03T13:20:35.869Z], ERORR: System: Test system error![39m
-[31mStack: Error: Test system error![39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:32:13[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-info: This is an informational message. 
-warning: This is a warning message. 
-error: This is an error message. 
-info: This is an informational message. 
-error: This is an error message. 
-warning: This is a warning message. 
-info: This is an informational message. 
-warning: This is a warning message. 
-error: System Error: This is a system error
-Stack: Error: This is a system error
-    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:8:18
-    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) 
-error: PermissionException: Permission denied
-Stack: PermissionException: Permission denied
-    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:9:23
-    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) 
-[31m[2025-02-03T14:27:13.346Z], ERORR: PermissionException: Permission denied[39m 
-[34m[2025-02-03T14:27:13.345Z], INFO: This is an informational message.[39m 
-[31m[2025-02-03T14:27:13.346Z], ERORR: Error: This is a system error[39m 
-[33m[2025-02-03T14:27:13.346Z], WARNING: This is a warning message.[39m 
-[34m[2025-02-03T14:44:55.067Z], INFO: This is an informational message.[39m 
-[33m[2025-02-03T14:44:55.068Z], WARNING: This is a warning message.[39m 
-[31m[2025-02-03T14:44:55.068Z], ERORR: Error: This is a system error[39m 
-[31m[2025-02-03T14:44:55.068Z], ERORR: PermissionException: Permission denied[39m 
-[34m[2025-02-03T14:47:12.618Z], INFO: This is an informational message.[39m 
-[33m[2025-02-03T14:47:12.619Z], WARNING: This is a warning message.[39m 
-[31m[2025-02-03T14:47:12.619Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:8:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T14:47:12.620Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:9:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[34m[2025-02-03T14:52:04.486Z], INFO: This is an informational message.[39m 
-[33m[2025-02-03T14:52:04.487Z], WARNING: This is a warning message.[39m 
-[31m[2025-02-03T14:52:04.487Z], ERROR: This is a error message.[39m 
-[31m[2025-02-03T14:52:04.487Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:6:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T14:52:04.487Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/events/logEmit.js:7:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[34m[2025-02-03T14:55:01.796Z], INFO: This is an informational message.[39m 
-[33m[2025-02-03T14:55:01.797Z], WARNING: This is a warning message.[39m 
-[31m[2025-02-03T14:55:01.797Z], ERROR: This is a error message.[39m 
-[31m[2025-02-03T14:55:01.798Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T14:55:01.798Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T15:05:49.987Z], ERROR: This is a error message.[39m 
-[31m[2025-02-03T15:05:49.988Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-02-03T15:05:49.987Z], WARNING: This is a warning message.[39m 
-[31m[2025-02-03T15:05:49.987Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[34m[2025-02-03T15:05:49.986Z], INFO: This is an informational message.[39m 
-[34m[2025-02-03T15:08:55.931Z], INFO: This is an informational message.[39m 
-[31m[2025-02-03T15:08:55.933Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T15:08:55.932Z], ERROR: This is a error message.[39m 
-[31m[2025-02-03T15:08:55.933Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-02-03T15:08:55.932Z], WARNING: This is a warning message.[39m 
-[34m[2025-02-03T15:11:33.335Z], INFO: This is an informational message.[39m 
-[31m[2025-02-03T15:11:33.339Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T15:11:33.338Z], ERROR: This is a error message.[39m 
-[31m[2025-02-03T15:11:33.339Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-02-03T15:11:33.336Z], WARNING: This is a warning message.[39m 
-[34m[2025-02-03T15:13:25.616Z], INFO: This is an informational message.[39m 
-[31m[2025-02-03T15:13:25.620Z], ERROR: System: Permission denied[39m
-[31mStack: PermissionException: Permission denied[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:7:23[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[33m[2025-02-03T15:13:25.617Z], WARNING: This is a warning message.[39m 
-[31m[2025-02-03T15:13:25.619Z], ERROR: System: This is a system error[39m
-[31mStack: Error: This is a system error[39m
-[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:6:18[39m
-[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m 
-[31m[2025-02-03T15:13:25.619Z], ERROR: This is a error message.[39m 
+[34m[2025-02-09T18:10:38.320Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:10:38.320Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:10:38.320Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:10:40.322Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:16:55.643Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:16:55.643Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:16:55.643Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:16:57.644Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:18:04.064Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:18:04.065Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:18:04.065Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:18:06.068Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:28:01.073Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:28:01.074Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:28:01.074Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:28:03.075Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:28:43.285Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:28:43.286Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:28:43.286Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:28:45.288Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:31:16.307Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:31:16.307Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:31:16.307Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:31:18.308Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:32:18.310Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:32:18.311Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:32:18.311Z] ERROR: This is an error message.[39m
+[34m[2025-02-09T18:32:20.311Z] INFO: Another log entry after 2 seconds.[39m
+[90m[2025-02-09T18:32:50.073Z] UNKNOWN: info[39m
+[90m[2025-02-09T18:32:50.074Z] UNKNOWN: warning[39m
+[90m[2025-02-09T18:32:50.074Z] UNKNOWN: error[39m
+[90m[2025-02-09T18:32:52.075Z] UNKNOWN: info[39m
+[34m[2025-02-09T18:36:23.111Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:36:23.112Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:36:23.112Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:36:23.112Z] ERROR: System: Щось пішло не так[39m
+[31mStack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:36:23.112Z] ERROR: System: Доступ заборонено[39m
+[31mStack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:12:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:36:23.112Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34m[2025-02-09T18:36:25.113Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:37:24.868Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:37:24.869Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:37:24.869Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:37:24.869Z] ERROR: System: Щось пішло не так[39m
+[31mStack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:37:24.869Z] ERROR: System: Доступ заборонено[39m
+[31mStack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:12:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:37:24.869Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34mStack: undefined[39m
+[34m[2025-02-09T18:37:26.869Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:37:35.158Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:37:35.159Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:37:35.159Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:37:35.159Z] ERROR: System: Щось пішло не так[39m
+[31mStack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:37:35.159Z] ERROR: System: Доступ заборонено[39m
+[31mStack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:12:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:37:35.159Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34mStack: undefined[39m
+[34m[2025-02-09T18:37:37.161Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:40:18.915Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:40:18.916Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:40:18.916Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:40:18.916Z] ERROR: System: Щось пішло не так[39m
+[31mStack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:40:18.917Z] ERROR: System: Доступ заборонено[39m
+[31mStack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:12:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:40:18.917Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34mStack: undefined[39m
+[34m[2025-02-09T18:40:20.918Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:42:10.770Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:42:10.771Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:42:10.771Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:42:10.771Z] ERROR: Stack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:42:10.772Z] ERROR: Stack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:12:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:42:10.772Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34mStack: undefined[39m
+[34m[2025-02-09T18:42:12.773Z] INFO: Another log entry after 2 seconds.[39m
+[34m[2025-02-09T18:51:30.279Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:51:30.280Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:51:30.281Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:51:30.281Z] ERROR: Stack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:10:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:51:30.281Z] ERROR: Stack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:51:30.281Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34mStack: undefined[39m
+[34m[2025-02-09T18:53:30.792Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T18:53:30.793Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T18:53:30.794Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T18:53:30.794Z] ERROR: Stack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:10:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T18:53:30.794Z] ERROR: Stack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T18:53:30.794Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34m[2025-02-09T19:01:18.126Z] INFO: This is an informational message.[39m
+[33m[2025-02-09T19:01:18.128Z] WARNING: This is a warning message.[39m
+[31m[2025-02-09T19:01:18.128Z] ERROR: This is an error message.[39m
+[31m[2025-02-09T19:01:18.128Z] ERROR: Stack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:10:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-09T19:01:18.129Z] ERROR: Stack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-09T19:01:18.129Z] INFO: INVALID MESSAGE TYPE: number[39m

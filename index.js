@@ -1,25 +1,35 @@
-import Logger from "./logger/logger.js";
 import PermissionException from "./exceptions/PermissionsException.js";
+import LogEmitter from "./streams/LogEmitter.js";
 
-const logger = new Logger();
+const logger = new LogEmitter();
 
-const errorMsg = new Error("This is a system error");
-const permissionMsg = new PermissionException("Permission denied");
+logger.log("This is an informational message.", "info");
+logger.log("This is a warning message.", "warning");
+logger.log("This is an error message.", "error");
 
-logger.info("This is an informational message.");
+logger.log(new Error("Щось пішло не так"), "error");
+logger.log(new PermissionException("Доступ заборонено"), "error");
+logger.log(42, "info");
 
-logger.warning("This is a warning message.");
-console.log("1");
-logger.error("This is a error message.");
+// const logger = new Logger();
 
-setTimeout(() => {
-  console.log("Checking async operation...");
-}, 2_000);
+// const errorMsg = new Error("This is a system error");
+// const permissionMsg = new PermissionException("Permission denied");
 
-console.log("2");
-logger.error(errorMsg);
-console.log("3");
-logger.error(permissionMsg);
+// logger.info("This is an informational message.");
+
+// logger.warning("This is a warning message.");
+// console.log("1");
+// logger.error("This is a error message.");
+
+// setTimeout(() => {
+//   console.log("Checking async operation...");
+// }, 2_000);
+
+// console.log("2");
+// logger.error(errorMsg);
+// console.log("3");
+// logger.error(permissionMsg);
 
 // const logger = new Logger();
 // const testErr = new PermissionException("Test PermissionException error!");
