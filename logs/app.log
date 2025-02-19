@@ -128,3 +128,34 @@
 [31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
 [31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
 [34m[2025-02-09T19:01:18.129Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34m[2025-02-18T11:25:40.190Z] INFO: This is an informational message.[39m
+[33m[2025-02-18T11:25:40.192Z] WARNING: This is a warning message.[39m
+[31m[2025-02-18T11:25:40.192Z] ERROR: This is an error message.[39m
+[31m[2025-02-18T11:25:40.192Z] ERROR: Stack: Error: Щось пішло не так[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:10:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[31m[2025-02-18T11:25:40.193Z] ERROR: Stack: PermissionException: Доступ заборонено[39m
+[31m    at file:///Users/privat/Downloads/homeWork/Lesson1/index.js:11:12[39m
+[31m    at ModuleJob.run (node:internal/modules/esm/module_job:194:25)[39m
+[34m[2025-02-18T11:25:40.193Z] INFO: INVALID MESSAGE TYPE: number[39m
+[34m[2025-02-18T11:27:33.732Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:29:10.451Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:30:11.323Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:32:22.113Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:49:17.747Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:52:36.470Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:54:36.463Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:55:09.079Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:55:37.682Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T11:59:26.452Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T12:05:52.436Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-18T12:08:04.291Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T18:28:13.522Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T18:31:50.765Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T18:34:46.505Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T18:40:09.227Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T18:50:43.149Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T18:57:07.693Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T19:11:52.150Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T19:24:03.204Z], INFO: Express is listening on port 3000[39m 
+[34m[2025-02-19T19:26:17.324Z], INFO: Express is listening on port 3000[39m 

@@ -1,29 +1,19 @@
-import http from "http";
+import path from "node:path";
+//import Logger from "./logger/logger.js";
+import express from "express";
+import { router } from "./src/routes/index.js";
 
-const getRandomDelay = () => Math.floor(Math.random() * 2000) + 1000;
+//const logger = new Logger();
 
-const isError = () => Math.floor(Math.random() * 10) === 0;
+const APPP_PORT = 3000;
 
-const server = http.createServer((req, res) => {
-  const delay = getRandomDelay();
+const app = express();
 
-  if (isError()) {
-    setTimeout(() => {
-      res.writeHead(500, { "Content-Type": "text/plain" });
-      res.end("Internal Server Error");
-    }, delay);
-    console.log(`500 ERROR - ${req.method} ${req.url} (затримка: ${delay} мс)`);
-    return;
-  }
+app.use(express.json());
 
-  setTimeout(() => {
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Server is running");
-    console.log(`200 OK - ${req.method} ${req.url} (затримка: ${delay} мс)`);
-  }, delay);
-});
+app.use("/", router);
 
-const PORT = 3000;
-server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(APPP_PORT, () => {
+  console.log(`Express is listening on port ${APPP_PORT}`);
+  //logger.info(`Express is listening on port ${APPP_PORT}`);
 });
