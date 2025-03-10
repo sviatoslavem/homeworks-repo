@@ -5,6 +5,7 @@ import express from "express";
 import authRoutes from "./src/routes/auth.routes.js";
 import protectedRoutes from "./src/routes/protected.routes.js";
 //const logger = new Logger();
+import sequelize from "./src/models/index.js";
 
 const APPP_PORT = 3000;
 

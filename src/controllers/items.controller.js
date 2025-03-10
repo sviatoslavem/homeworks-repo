@@ -1,39 +1,50 @@
-let items = [];
-let idCounter = 1;
+import Item from "../models/item.model.js";
 
-export const getItems = (req, res) => {
+export const getItems = async (req, res) => {
+  const items = await Item.findAll();
   res.json(items);
 };
 
-export const createItem = (req, res) => {
+export const createItem = async (req, res) => {
   const { text } = req.body;
-
-  const newItem = { id: idCounter++, text, status: "new" };
-  items.push(newItem);
-  res.status(201).json(newItem);
+  try {
+    const newItem = await Item.create({ text });
+    res.status(201).json(newItem);
+  } catch (err) {
+    res.status(500).json({ error: "Помилка створення таски" });
+  }
 };
 
-export const updateItemStatus = (req, res) => {
+export const updateItemStatus = async (req, res) => {
   const { itemId } = req.params;
   const { status } = req.body;
 
-  const item = items.find((i) => i.id == itemId);
-  if (!item) {
-    return res.status(404).json({ error: "Таск не знайдено" });
-  }
+  try {
+    const item = await Item.findByPk(itemId);
+    if (!item) {
+      return res.status(404).json({ error: "Таск не знайдено" });
+    }
 
-  item.status = status;
-  res.json(item);
+    item.status = status;
+    await item.save();
+    res.json(item);
+  } catch (err) {
+    res.status(500).json({ error: "Помилка оновлення таски" });
+  }
 };
 
-export const deleteItem = (req, res) => {
+export const deleteItem = async (req, res) => {
   const { itemId } = req.params;
-  const index = items.findIndex((i) => i.id == itemId);
 
-  if (index === -1) {
-    return res.status(404).json({ error: "Таск не знайдено" });
+  try {
+    const item = await Item.findByPk(itemId);
+    if (!item) {
+      return res.status(404).json({ error: "Таск не знайдено" });
+    }
+
+    await item.destroy();
+    res.json({ message: "Таск видалено" });
+  } catch (err) {
+    res.status(500).json({ error: "Помилка видалення таски" });
   }
-
-  const [deletedItem] = items.splice(index, 1);
-  res.json({ message: "Таск видалено", deletedItem });
 };
